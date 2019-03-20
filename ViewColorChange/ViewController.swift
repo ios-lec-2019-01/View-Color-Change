@@ -10,12 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var redView: UIView!
+    @IBOutlet weak var blueView: UIView!
+    @IBOutlet weak var greenView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.view.backgroundColor = UIColor.lightGray
+        //self.view.backgroundColor = UIColor.lightGray
     }
 
-
+    @IBAction func bittonRedPressed(_ sender: Any) {
+        //redView.backgroundColor = UIColor.white
+        redView.isHidden = true
+    }
+    
+    @IBAction func buttonBluePressed(_ sender: Any) {
+        //blueView.backgroundColor = UIColor.white
+        blueView.isHidden = true
+    }
+    
+    @IBAction func buttonGreenPressed(_ sender: Any) {
+        //greenView.backgroundColor = UIColor.white
+        greenView.isHidden = true
+    }
+    
 }
 

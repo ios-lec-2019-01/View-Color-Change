@@ -33,10 +33,39 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36012532520000001" green="1" blue="0.1175937049" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xH-rv-gVc">
+                                <rect key="frame" x="52" y="555" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button R"/>
+                                <connections>
+                                    <action selector="bittonRedPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="igo-H5-nI9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wia-Uv-7CI">
+                                <rect key="frame" x="254" y="555" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button G"/>
+                                <connections>
+                                    <action selector="buttonGreenPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P3T-bM-JTX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPW-cB-Ox2">
+                                <rect key="frame" x="149" y="555" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button B"/>
+                                <connections>
+                                    <action selector="buttonBluePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KpR-eZ-xsu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="blueView" destination="wsF-tE-E0C" id="Wsz-ld-s1c"/>
+                        <outlet property="greenView" destination="L3n-FO-qJk" id="2ym-BT-G7B"/>
+                        <outlet property="redView" destination="EoU-L9-WAb" id="7DP-TP-Fq9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
